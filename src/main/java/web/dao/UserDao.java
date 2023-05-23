@@ -5,13 +5,13 @@ import web.model.User;
 import java.util.List;
 
 public interface UserDao {
-    List<User> getAllUser();
+    List<User> getUsers();
 
-    void saveUser(User user);
+    void save(User user);
 
-    void updateUser(User user);
+    User showUser(int id);
 
-    User show(int id);
+    void editUser(User user);
 
     void deleteUser(int id);
 }
